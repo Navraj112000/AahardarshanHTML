@@ -654,7 +654,7 @@ footer ul li {
     gap: 2rem;
   }
   .formtext {
-    width: 100%;
+    display: none;
   }
   .contactform {
     width: calc(100% - 6rem);
