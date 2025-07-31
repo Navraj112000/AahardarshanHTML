@@ -369,9 +369,13 @@ p {
   padding: 2rem;
   border-radius: 12px;
 }
+.servicecards .seemore {
+  display: none;
+}
 .servicecard img {
   width: 50px;
 }
+
 .servicecard h3,
 p {
   color: #111111;
@@ -550,11 +554,12 @@ footer ul li {
     padding: 0;
     width: auto;
   }
-  html {
+  /* html {
     font-size: 66%;
-  }
+  } */
   h1 {
     width: 100%;
+    font-size: 1.4rem;
   }
   .banner {
     background: url(./assets/mobilebanner.png);
@@ -598,6 +603,7 @@ footer ul li {
     position: relative;
   }
   .servicecards .seemore {
+    display: block;
     background-color: #000000;
     color: #fff1b3;
     height: 43px;
