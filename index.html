@@ -2,13 +2,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
+
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-<link rel="stylesheet" href="./style.css" />
-<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <title>Aahardarshan</title>
   </head>
   <body>
@@ -119,7 +119,7 @@
           Thyroid to PCOS and Beyond!
         </p>
         <div class="bannerbtns">
-          <button class="filled">Get Your Free Health Assessment</button>
+          <button class="filled">Book A Free Counsultation</button>
           <button class="outlined">View Plans</button>
         </div>
       </div>
@@ -218,12 +218,15 @@
         </div>
       </div>
       <div class="txtcenter">
-        <button class="filled">Get Your Free Health Assessment</button>
+        <button class="filled">Book your Free Counsultation</button>
       </div>
     </section>
     <section class="services bg-dark">
       <h2 class="txtcenter">What You Get</h2>
-      <div class="servicecards">
+      <div id="servicecardContainer" class="servicecards">
+        <button id="seemore" onclick="semore()" class="seemore" value="more">
+          See More
+        </button>
         <div class="servicecard">
           <img src="./assets/personalizeddiet.svg" alt="" />
           <div>
@@ -325,16 +328,29 @@
         </p>
         <h2>Dr. Shivam Agarwal</h2>
         <p>
-          A dedicated health expert who specializes in organic nutrition, yoga therapy, and personalized lifestyle consultations. With a deep passion for holistic wellness, he has guided more than 100 individuals toward achieving lasting weight loss, better health, and a balanced lifestyle.<br><br>
+          A dedicated health expert who specializes in organic nutrition, yoga
+          therapy, and personalized lifestyle consultations. With a deep passion
+          for holistic wellness, he has guided more than 100 individuals toward
+          achieving lasting weight loss, better health, and a balanced
+          lifestyle.<br /><br />
 
-Instead of quick fixes or short-term diets, Dr. Agarwal believes in creating sustainable changes that fit naturally into each person’s daily life. His unique approach combines the healing power of organic, nutrient-rich foods with the benefits of mindful yoga practices. Every plan he designs is tailored to the individual’s specific health concerns, preferences, and medical conditions, ensuring that each person gets exactly what their body needs.<br><br>
+          Instead of quick fixes or short-term diets, Dr. Agarwal believes in
+          creating sustainable changes that fit naturally into each person’s
+          daily life. His unique approach combines the healing power of organic,
+          nutrient-rich foods with the benefits of mindful yoga practices. Every
+          plan he designs is tailored to the individual’s specific health
+          concerns, preferences, and medical conditions, ensuring that each
+          person gets exactly what their body needs.<br /><br />
 
-Over the years, he has earned a reputation as a trusted guide for anyone seeking vibrant health and true transformation. His ultimate goal is to help people not just look better, but feel stronger, more energetic, and more connected to their overall well-being for the long term.
+          Over the years, he has earned a reputation as a trusted guide for
+          anyone seeking vibrant health and true transformation. His ultimate
+          goal is to help people not just look better, but feel stronger, more
+          energetic, and more connected to their overall well-being for the long
+          term.
         </p>
         <h3>Reach Out with:</h3>
 
-        <div style="padding-bottom: 1rem; display: flex;gap: 1rem;">
-          
+        <div style="padding-bottom: 1rem; display: flex; gap: 1rem">
           <a href="tel:+918619194920" target="_blank"
             ><img src="./assets/phone.png" alt=""
           /></a>
@@ -413,57 +429,60 @@ Over the years, he has earned a reputation as a trusted guide for anyone seeking
       </div>
     </section> -->
     <section class="testimonial">
-      <div class="clienttextheading" >
+      <div class="clienttextheading">
         <div class="text">Our Client’s Words</div>
         <hr />
         <p>View the Opinion of our client regarding us and our work</p>
       </div>
       <div class="testimonialContaineer">
-      <div class="swiper testimonial-carousel">
-  <div class="swiper-wrapper">
-    <!-- Slide 1 -->
-    <div class="swiper-slide">
-      <div class="testimonialcards">
-        <img src="./assets/anu.png" alt="" />
-        <h3>Ananya Saikia</h3>
-        <span>Age 28, Guwahati</span>
-        <p>
-          The Premium Plan transformed my lifestyle! Lost weight, felt energetic, and loved the personalized support. Truly a life-changing experience!
+        <div class="swiper testimonial-carousel">
+          <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="swiper-slide">
+              <div class="testimonialcards">
+                <img src="./assets/anu.png" alt="" />
+                <h3>Ananya Saikia</h3>
+                <span>Age 28, Guwahati</span>
+                <p>
+                  The Premium Plan transformed my lifestyle! Lost weight, felt
+                  energetic, and loved the personalized support. Truly a
+                  life-changing experience!
+                </p>
+              </div>
+            </div>
 
-        </p>
+            <!-- Slide 2 -->
+            <div class="swiper-slide">
+              <div class="testimonialcards">
+                <img src="./assets/Testimonialimage.png" alt="" />
+                <h3>Ajay Shukla</h3>
+                <span>Age 33, Agra</span>
+                <p>
+                  The wedding plan was a lifesaver! I looked slimmer, felt
+                  confident, and my skin was glowing on the big day!
+                </p>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="swiper-slide">
+              <div class="testimonialcards">
+                <img src="./assets/Testimonialimage.png" alt="" />
+                <h3>Neha Kapoor</h3>
+                <span>Age 52, Agra</span>
+                <p>
+                  Amazing experience! All plans are effective, easy to follow,
+                  and well-guided. I feel healthier, lighter, and more
+                  confident than ever!
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
       </div>
-    </div>
-
-    <!-- Slide 2 -->
-    <div class="swiper-slide">
-      <div class="testimonialcards">
-        <img src="./assets/Testimonialimage.png" alt="" />
-        <h3>Ajay Shukla</h3>
-        <span>Age 33, Agra</span>
-        <p>
-          The wedding plan was a lifesaver! I looked slimmer, felt confident, and my skin was glowing on the big day!
-
-        </p>
-      </div>
-    </div>
-
-    <!-- Slide 3 -->
-    <div class="swiper-slide">
-      <div class="testimonialcards">
-        <img src="./assets/Testimonialimage.png" alt="" />
-        <h3>Neha Kapoor</h3>
-        <span>Age 52, Agra</span>
-        <p>
-Amazing experience! All plans are effective, easy to follow, and well-guided. I feel healthier, lighter, and more confident than ever!        </p>
-      </div>
-    </div>
-  </div>
-
-  <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-  
-</div>
-</div>
     </section>
     <section class="form">
       <div class="formtext">
@@ -568,27 +587,38 @@ Amazing experience! All plans are effective, easy to follow, and well-guided. I 
       </div>
     </footer>
 
-
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script>
-const swiper = new Swiper(".testimonial-carousel", {
-  loop: true,
-  autoplay: {
-    delay: 3000,
-    disableOnInteraction: false,
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
-</script>
+    <script>
+      const swiper = new Swiper(".testimonial-carousel", {
+        loop: true,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
 
+      function semore() {
+        elem = document.getElementById("seemore");
+        cont = document.getElementById("servicecardContainer");
+        console.log(cont.style);
+        if (elem.value == "more") {
+          cont.style.height = "1540";
+          elem.value = "less";
+          elem.innerHTML = "See Less";
+        } else if (elem.value == "less") {
+          cont.style.height = "550px";
+          elem.value = "more";
+          elem.innerHTML = "See More";
+        }
+      }
+    </script>
   </body>
-
-  </script>
 </html>
