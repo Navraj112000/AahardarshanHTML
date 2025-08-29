@@ -1,11 +1,9 @@
-/* html{
-   font-size: 62.5%; 
-} */
 html {
   scroll-behavior: smooth;
 }
 .overlay {
   position: fixed;
+  z-index: 99999;
   top: 0;
   bottom: 0;
   left: 0;
@@ -21,6 +19,7 @@ html {
 }
 .overlay2 {
   position: fixed;
+  z-index: 99999;
   top: 0;
   bottom: 0;
   left: 0;
@@ -58,6 +57,7 @@ html {
 .popup2 .emptyclose {
   position: absolute;
   top: 0;
+  z-index: 99999;
   left: 0;
   height: 100vh;
   width: 40vw;
@@ -223,12 +223,13 @@ a.menubtn:hover {
 }
 
 button {
-  padding: 0.9rem 0.9rem;
-  border-radius: 8px;
+  padding: 0.9rem 1.2rem;
+  border-radius: 18px;
   border: none;
   font-weight: 600;
   font-size: 1.3rem;
 }
+
 .filled {
   background-color: #626f47;
   color: #ffffff;
@@ -269,7 +270,7 @@ button {
   flex-direction: row;
   gap: 1rem;
 }
-h1 {
+.cool {
   font-size: 3rem;
   width: 45%;
   color: #626f47;
@@ -286,10 +287,10 @@ section {
 .txtcenter {
   text-align: center;
 }
-h2 {
+.form h2 {
   color: #626f47;
   font-weight: 700;
-  padding-bottom: 1rem;
+  margin: 0;
 }
 
 .solutionCards {
@@ -309,7 +310,7 @@ h2 {
   display: flex;
   background: #fffefe;
   border-radius: 12px;
-
+  align-items: center;
   padding: 1rem;
   gap: 1rem;
 }
@@ -328,6 +329,9 @@ h3 {
 .specializationcard:hover img {
   filter: brightness(0) invert(1);
 }
+.specializationcard img {
+  height: auto;
+}
 .uspcards {
   padding: 2rem;
   display: flex;
@@ -336,9 +340,16 @@ h3 {
 .uspcard {
   width: 25%;
   padding: 1rem;
-  background-color: #fff1b3;
+  background: linear-gradient(
+    174deg,
+    rgba(161, 136, 29, 1) 0%,
+    rgba(255, 241, 179, 1) 100%
+  );
   border-radius: 12px;
   text-align: center;
+}
+.uspcard img {
+  border-radius: 8px;
 }
 .uspcard ul {
   text-align: left;
@@ -470,6 +481,9 @@ p {
   display: flex;
   justify-content: space-around;
 }
+.form h2 {
+  font-size: 2.5rem;
+}
 .formtext {
   width: 40%;
 }
@@ -507,6 +521,11 @@ textarea {
   width: 100%;
   height: 4rem;
   border-radius: 8px;
+  min-width: 300px;
+}
+.footer_Terms {
+  background-color: #cacaca;
+  padding-bottom: 3rem;
 }
 
 footer {
@@ -554,12 +573,12 @@ footer ul li {
     padding: 0;
     width: auto;
   }
-  /* html {
+  html {
     font-size: 66%;
-  } */
-  h1 {
+  }
+  .cool {
     width: 100%;
-    font-size: 1.4rem;
+    /* font-size: 1.4rem; */
   }
   .banner {
     background: url(./assets/mobilebanner.png);
@@ -669,6 +688,10 @@ footer ul li {
     width: calc(100% - 3rem);
     min-width: 250px;
   }
+  textarea {
+    width: calc(100% - 3rem);
+    min-width: 250px;
+  }
   footer div.footertext {
     display: block;
     width: 100%;
@@ -676,4 +699,145 @@ footer ul li {
   footer div {
     display: none;
   }
+}
+
+/*     mknkjbgjhvgjhkvjhk */
+:root {
+  --background: ;
+  --base: #404e22;
+  --accent: #a4b465;
+  --shadow: #000000;
+}
+
+.cool {
+  font: bold 3rem/1.2 sans-serif;
+}
+.cool span {
+  color: var(--shadow);
+  display: inline-block;
+  position: relative;
+}
+.cool span:nth-child(1)::before,
+.cool span:nth-child(1)::after {
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}
+.cool span:nth-child(2)::before,
+.cool span:nth-child(2)::after {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+.cool span:nth-child(3)::before,
+.cool span:nth-child(3)::after {
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+.cool span:nth-child(4)::before,
+.cool span:nth-child(4)::after {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+.cool span:nth-child(5)::before,
+.cool span:nth-child(5)::after {
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+.cool span:nth-child(6)::before,
+.cool span:nth-child(6)::after {
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+.cool span:nth-child(7)::before,
+.cool span:nth-child(7)::after {
+  -webkit-animation-delay: 0.7s;
+  animation-delay: 0.7s;
+}
+.cool span:nth-child(8)::before,
+.cool span:nth-child(8)::after {
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+.cool span:nth-child(9)::before,
+.cool span:nth-child(9)::after {
+  -webkit-animation-delay: 0.9s;
+  animation-delay: 0.9s;
+}
+.cool span:nth-child(10)::before,
+.cool span:nth-child(10)::after {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+@media (prefers-reduced-motion) {
+  .cool span {
+    color: var(--base);
+  }
+}
+.cool span::before {
+  animation: max-height 0.8s cubic-bezier(0.61, 1, 0.88, 1) infinite alternate;
+  color: var(--accent);
+}
+.cool span::after {
+  animation: max-width 1.2s cubic-bezier(0.61, 1, 0.88, 1) infinite alternate;
+  color: var(--base);
+}
+.cool span::before,
+.cool span::after {
+  content: attr(data-text);
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+}
+@media (prefers-reduced-motion) {
+  .cool span::before,
+  .cool span::after {
+    -webkit-animation: none;
+    animation: none;
+    content: "";
+  }
+}
+
+@-webkit-keyframes max-width {
+  from {
+    max-width: 0;
+  }
+  to {
+    max-width: 100%;
+  }
+}
+
+@keyframes max-width {
+  from {
+    max-width: 0;
+  }
+  to {
+    max-width: 100%;
+  }
+}
+@-webkit-keyframes max-height {
+  from {
+    max-height: 0;
+  }
+  to {
+    max-height: 100%;
+  }
+}
+@keyframes max-height {
+  from {
+    max-height: 0;
+  }
+  to {
+    max-height: 100%;
+  }
+}
+
+.footerContact {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  padding-inline-start: 40px;
+  unicode-bidi: isolate;
+}
+.footerContact img {
+  width: 36px;
 }

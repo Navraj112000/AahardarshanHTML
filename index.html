@@ -2,7 +2,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -13,18 +13,25 @@
   </head>
   <body>
     <navbar class="navbar">
-      <logo class="logo"><img src="./assets/logo.svg" alt="" /></logo>
+      <logo class="logo"
+        ><a href="./index.html"><img src="./assets/logo.svg" alt="" /></a
+      ></logo>
       <a href="#mobile_menu"
         ><button class="mobilemenu">
           <img src="./assets/hamburger.png" width="45px" alt="" /></button
       ></a>
       <ul class="menu">
-        <li><a href="#Our_Services" class="menubtn">Our Services</a></li>
-        <li><a href="#popup1" class="menubtn" onclick="">Our Programs</a></li>
+        <li><a href="#Our_Services" class="menubtn">Our Services^</a></li>
+        <li><a href="#popup1" class="menubtn">Our Programs</a></li>
         <li><a href="#about_Section" class="menubtn">About</a></li>
         <!-- <li><a href="" class="menubtn">Blog</a></li> -->
         <li>
-          <a href="#contact_form"><button class="filled">Contact Us</button></a>
+          <a href="./trial_guide.html"
+            ><button class="filled">
+              <img src="./assets/pdf.svg" alt="" />
+              Trial Guide
+            </button></a
+          >
         </li>
       </ul>
     </navbar>
@@ -38,8 +45,8 @@
           <li><a href="#about_Section" class="menubtn">About</a></li>
           <!-- <li><a href="" class="menubtn">Blog</a></li> -->
           <li class="test">
-            <a href="#contact_form"
-              ><button class="filled">Contact Us</button></a
+            <a href="./trial_guide.html"
+              ><button class="filled">Trial Guide</button></a
             >
           </li>
         </ul>
@@ -63,7 +70,7 @@
               <li>24/7 Availability</li>
               <li>Specific Diet Plan</li>
             </ul>
-            <a href="#contact_form"
+            <a href="./trial_guide.html"
               ><button class="filled">Contact US</button></a
             >
           </div>
@@ -113,76 +120,87 @@
     </div>
     <banner class="banner">
       <div class="bannertext">
-        <h1>Personalized Nutrition. Healing Yoga. Real, Lasting Change.</h1>
+        <h1 class="cool">
+          <span data-text="Personalized">Personalized</span>
+          <span data-text="Nutrition."> Nutrition.</span>
+          <span data-text=" Healing"> Healing</span>
+          <span data-text=" Yoga."> Yoga.</span>
+          <span data-text=" For "> For </span>
+          <span data-text="Real,">Real,</span>
+          <span data-text=" Lasting"> Lasting</span>
+          <span data-text=" Change."> Change.</span>
+        </h1>
         <p class="bannerdesc">
           Targeted Diets & Yoga Therapies for 10+ Health Conditions — From
           Thyroid to PCOS and Beyond!
         </p>
         <div class="bannerbtns">
-          <button class="filled">Book A Free Counsultation</button>
-          <button class="outlined">View Plans</button>
+          <a href="#contact_form"
+            ><button class="filled">Book your Appointment Now</button></a
+          >
+          <a href="#popup1"><button class="outlined">View Plans</button></a>
         </div>
       </div>
     </banner>
     <section id="Our_Services" class="specializaton">
       <h2 class="txtcenter">We Specialize in These Conditions</h2>
       <div class="solutionCards">
-        <a href="">
-          <div class="specializationcard">
+        <a>
+          <div class="specializationcard" data-aos="zoom-in">
             <img src="./assets/thyroid.svg" alt="" />
             <h3>Thyroid</h3>
           </div>
         </a>
-        <a href="">
-          <div class="specializationcard">
+        <a>
+          <div class="specializationcard" data-aos="zoom-in">
             <img src="./assets/PCOSPCOD.svg" alt="" />
             <h3>PCOS/PCOD</h3>
           </div>
         </a>
-        <a href="">
-          <div class="specializationcard">
+        <a>
+          <div class="specializationcard" data-aos="zoom-in">
             <img src="./assets/diabities.svg" alt="" />
             <h3>Diabetes</h3>
           </div>
         </a>
-        <a href="">
-          <div class="specializationcard">
-            <img src="./assets/obesity.svg" alt="" />
+        <a>
+          <div class="specializationcard" data-aos="zoom-in">
+            <img src="./assets/obesity.png" alt="" />
             <h3>Obesity</h3>
           </div>
         </a>
-        <a href="">
-          <div class="specializationcard">
+        <a>
+          <div class="specializationcard" data-aos="zoom-in">
             <img src="./assets/hypertension.svg" alt="" />
             <h3>Hypertension</h3>
           </div>
         </a>
-        <a href="">
-          <div class="specializationcard">
+        <a>
+          <div class="specializationcard" data-aos="zoom-in">
             <img src="./assets/high_cholestrol.svg" alt="" />
             <h3>High Cholesterol</h3>
           </div>
         </a>
-        <a href="">
-          <div class="specializationcard">
+        <a>
+          <div class="specializationcard" data-aos="zoom-in">
             <img src="./assets/digestive.svg" alt="" />
             <h3>Digestive Issues</h3>
           </div>
         </a>
-        <a href="">
-          <div class="specializationcard">
+        <a>
+          <div class="specializationcard" data-aos="zoom-in">
             <img src="./assets/hormonal.svg" alt="" />
             <h3>Hormonal Imbalance</h3>
           </div>
         </a>
-        <a href="">
-          <div class="specializationcard">
+        <a>
+          <div class="specializationcard" data-aos="zoom-in">
             <img src="./assets/liver.svg" alt="" />
             <h3>Fatty Liver</h3>
           </div>
         </a>
-        <a href="">
-          <div class="specializationcard">
+        <a>
+          <div class="specializationcard" data-aos="zoom-in">
             <img src="./assets/stress.svg" alt="" />
             <h3>Stress & Anxiety</h3>
           </div>
@@ -192,24 +210,24 @@
     <section class="usp">
       <h2 class="txtcenter">How It Works</h2>
       <div class="uspcards">
-        <div class="uspcard">
-          <img src="./assets/BalancedNutritiopndiet.svg" alt="" />
+        <div class="uspcard" data-aos="zoom-in-up">
+          <img src="./assets/targetedyoga.jpg" width="100%" alt="" />
           <h3 class="txtcenter">Balanced Nutrition Plans</h3>
           <ul>
             <li>Powerful Anti-Inflammatory Plans Tailored to Your Condition</li>
             <li>Delicious Recipes + Ready-to-Go Grocery Lists Included</li>
           </ul>
         </div>
-        <div class="uspcard">
-          <img src="./assets/targetedyogatherapy.svg" alt="" />
+        <div class="uspcard" data-aos="zoom-in-up">
+          <img src="./assets/BalancedNutritiopndiet.jpg" width="100%" alt="" />
           <h3 class="txtcenter">Yoga Live Session</h3>
           <ul>
             <li>Therapeutic Yoga & Breathwork Tailored to Your Condition</li>
             <li>Short, Guided Videos Designed for Busy Lives (15–30 min)</li>
           </ul>
         </div>
-        <div class="uspcard">
-          <img src="./assets/onlinesupprt.png" alt="" />
+        <div class="uspcard" data-aos="zoom-in-up">
+          <img src="./assets/onlinesupprt.jpg" width="100%" alt="" />
           <h3 class="txtcenter">Ongoing Support</h3>
           <ul>
             <li>Stay Accountable with Weekly Wellness Check-Ins</li>
@@ -218,7 +236,9 @@
         </div>
       </div>
       <div class="txtcenter">
-        <button class="filled">Book your Free Counsultation</button>
+        <a href="#contact_form"
+          ><button class="filled">Book your Free Counsultation</button></a
+        >
       </div>
     </section>
     <section class="services bg-dark">
@@ -227,7 +247,7 @@
         <button id="seemore" onclick="semore()" class="seemore" value="more">
           See More
         </button>
-        <div class="servicecard">
+        <div class="servicecard" data-aos="zoom-in-up">
           <img src="./assets/personalizeddiet.svg" alt="" />
           <div>
             <h3>Personalized Diet Charts</h3>
@@ -237,7 +257,7 @@
             </p>
           </div>
         </div>
-        <div class="servicecard">
+        <div class="servicecard" data-aos="zoom-in-up">
           <img src="./assets/Weeklymealplan.svg" />
           <div>
             <h3>Weekly Meal Plans</h3>
@@ -247,7 +267,7 @@
             </p>
           </div>
         </div>
-        <div class="servicecard">
+        <div class="servicecard" data-aos="zoom-in-up">
           <img src="./assets/yogalivesession.svg" alt="" />
           <div>
             <h3>Yoga Live Session</h3>
@@ -258,7 +278,7 @@
             </p>
           </div>
         </div>
-        <div class="servicecard">
+        <div class="servicecard" data-aos="zoom-in-up">
           <img src="./assets/1oncounsultant.png" alt="" />
           <div>
             <h3>1-on-1 Consultation</h3>
@@ -268,7 +288,7 @@
             </p>
           </div>
         </div>
-        <div class="servicecard">
+        <div class="servicecard" data-aos="zoom-in-up">
           <img src="./assets/whatsappsuppot.png" alt="" />
           <div>
             <h3>WhatsApp Support</h3>
@@ -278,7 +298,7 @@
             </p>
           </div>
         </div>
-        <div class="servicecard">
+        <div class="servicecard" data-aos="zoom-in-up">
           <img src="./assets/symptomtracker.png" alt="" />
           <div>
             <h3>Symptom Tracker</h3>
@@ -288,7 +308,7 @@
             </p>
           </div>
         </div>
-        <div class="servicecard">
+        <div class="servicecard" data-aos="zoom-in-up">
           <img src="./assets/lifestyletip.png" alt="" />
           <div>
             <h3>Lifestyle Tips</h3>
@@ -298,7 +318,7 @@
             </p>
           </div>
         </div>
-        <div class="servicecard">
+        <div class="servicecard" data-aos="zoom-in-up">
           <img src="./assets/100recipe.png" alt="" />
           <div>
             <h3>100+ Recipes</h3>
@@ -308,7 +328,7 @@
             </p>
           </div>
         </div>
-        <div class="servicecard">
+        <div class="servicecard" data-aos="zoom-in-up">
           <img src="./assets/monthlyprogressreprt.png" alt="" />
           <div>
             <h3>Monthly Progress Reports</h3>
@@ -321,7 +341,7 @@
       </div>
     </section>
     <section id="about_Section" class="aboutus">
-      <div><img src="./assets/doctor.png" alt="" /></div>
+      <div data-aos="zoom-in-up"><img src="./assets/doctor.png" alt="" /></div>
       <div>
         <p>
           “"Let food be thy medicine and medicine be thy food."- Hippocrates
@@ -444,9 +464,9 @@
                 <h3>Ananya Saikia</h3>
                 <span>Age 28, Guwahati</span>
                 <p>
-                  The Premium Plan transformed my lifestyle! Lost weight, felt
-                  energetic, and loved the personalized support. Truly a
-                  life-changing experience!
+                  I lost 30 kgs in just 4 months without starving myself. Dr.
+                  Shivam’s diet plans are simple, sustainable, and easy to
+                  follow. I feel more energetic than ever!
                 </p>
               </div>
             </div>
@@ -454,12 +474,13 @@
             <!-- Slide 2 -->
             <div class="swiper-slide">
               <div class="testimonialcards">
-                <img src="./assets/Testimonialimage.png" alt="" />
-                <h3>Ajay Shukla</h3>
-                <span>Age 33, Agra</span>
+                <img src="./assets/Akashgoyal.png" alt="" />
+                <h3>Aakash Goyal</h3>
+                <span>Age 27, Sikar</span>
                 <p>
-                  The wedding plan was a lifesaver! I looked slimmer, felt
-                  confident, and my skin was glowing on the big day!
+                  "I’m a working professional and always on the go. Dr. Shivam
+                  gave me quick, practical meal options that I could manage even
+                  with my hectic schedule."
                 </p>
               </div>
             </div>
@@ -467,13 +488,39 @@
             <!-- Slide 3 -->
             <div class="swiper-slide">
               <div class="testimonialcards">
-                <img src="./assets/Testimonialimage.png" alt="" />
-                <h3>Neha Kapoor</h3>
-                <span>Age 52, Agra</span>
+                <img src="./assets/Amitshukla.png" alt="" />
+                <h3>Amit Shukla</h3>
+                <span>Age 28, Agra</span>
                 <p>
-                  Amazing experience! All plans are effective, easy to follow,
-                  and well-guided. I feel healthier, lighter, and more
-                  confident than ever!
+                  "As a vegetarian, I struggled to find balanced diet options.
+                  Dr. Shivam curated a plan using simple home-cooked meals. No
+                  fancy ingredients, just real results!"
+                </p>
+              </div>
+            </div>
+            <!-- Slide 4 -->
+            <div class="swiper-slide">
+              <div class="testimonialcards">
+                <img src="./assets/Priya.png" alt="" />
+                <h3>Priya Agarwal</h3>
+                <span>Age 32, Sikar</span>
+                <p>
+                  "Dr. Shivam customizes every plan based on your lifestyle and
+                  preferences. I never felt deprived, yet I managed to lose 15
+                  kgs in 6 months."
+                </p>
+              </div>
+            </div>
+            <!-- Slide 5 -->
+            <div class="swiper-slide">
+              <div class="testimonialcards">
+                <img src="./assets/sumanShukla.png" alt="" />
+                <h3>Suman Shukla</h3>
+                <span>Age 55, Agra</span>
+                <p>
+                  "Within 6 weeks, I noticed my bloating reduced, my skin
+                  improved, and I slept better. Dr. Shivam’s herbal and organic
+                  approach really works."
                 </p>
               </div>
             </div>
@@ -484,7 +531,7 @@
         </div>
       </div>
     </section>
-    <section class="form">
+    <section class="form" id="#contact">
       <div class="formtext">
         <h3>We’re here to help you</h3>
         <h2>Let’s Connect Over</h2>
@@ -492,12 +539,14 @@
           We treat food as medicine and movement as therapy. Every body is
           different — that’s why every plan we create is uniquely yours.
         </p>
-        <button class="outlined">View Plans</button>
+        <a href="#popup1"><button class="outlined">View Plans</button></a>
       </div>
       <form
-        action="https://formspree.io/f/mvgqqowr"
+        action="https://formspree.io/f/mnnzkodz"
         method="POST"
         class="contactform"
+        id="contact_form"
+        data-aos="zoom-in-up"
       >
         <div>
           <label for="full_name">Full Name <span>*</span></label>
@@ -544,48 +593,66 @@
         <button type="submit" class="filled">Let's Connect</button>
       </form>
     </section>
-    <footer class="footer">
-      <div class="footertext">
-        <img src="./assets/logo.svg" alt="" />
-        <p>
-          Aahardarshan is your partner in holistic healing — founded by Dr.
-          Shivam Agarwal, a wellness expert known for his integrative approach
-          combining organic nutrition, therapeutic yoga, and personalized
-          lifestyle coaching. With a focus on reversing conditions like PCOS,
-          thyroid imbalance, gut issues, and obesity naturally.
-        </p>
+    <div class="footer_Terms">
+      <footer class="footer">
+        <div class="footertext">
+          <img src="./assets/logo.svg" alt="" />
+          <p>
+            Aahardarshan is your partner in holistic healing — founded by Dr.
+            Shivam Agarwal, a wellness expert known for his integrative approach
+            combining organic nutrition, therapeutic yoga, and personalized
+            lifestyle coaching. With a focus on reversing conditions like PCOS,
+            thyroid imbalance, gut issues, and obesity naturally.
+          </p>
+        </div>
+        <div>
+          <ul>
+            <li class="bold">Services</li>
+            <li>Personalized Diet Plans</li>
+            <li>Condition-Specific Yoga Therapy</li>
+            <li>Guided Breathing & Pranayama Sessions</li>
+            <li>Live 1-on-1 Consultations</li>
+            <li>Weekly Meal Plans</li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li class="bold">Services</li>
+            <li>100+ Healing Recipes</li>
+            <li>Grocery Lists & Prep Guides</li>
+            <li>Symptom Tracking Dashboard</li>
+            <li>Monthly Progress Reports</li>
+            <li>Expert WhatsApp Support</li>
+          </ul>
+        </div>
+        <div class="footerContact">
+          <div class="bold">Contact US @</div>
+
+          <div style="margin: 0 0 20px 0">
+            <a href="mailto:support@aahardarshan.com"
+              >support@aahardarshan.com</a
+            >
+          </div>
+          <div style="padding-bottom: 1rem; display: flex; gap: 1rem">
+            <a href="tel:+918619194920" target="_blank"
+              ><img src="./assets/phone.png" alt=""
+            /></a>
+            <a href="https://wa.me/8619194920" target="_blank"
+              ><img src="./assets/whatsappsuppot.png" alt=""
+            /></a>
+            <a
+              href="https://www.instagram.com/dr_shivam_agarwal?igsh=MTNrZGF4ank1ajA1dg=="
+              target="_blank"
+              ><img src="./assets/singletone_instagram.png" alt=""
+            /></a>
+          </div>
+        </div>
+      </footer>
+      <div class="Terms">
+        <hr />
+        <p style="text-align: center">Copyright ©</p>
       </div>
-      <div>
-        <ul>
-          <li class="bold">Services</li>
-          <li>Personalized Diet Plans</li>
-          <li>Condition-Specific Yoga Therapy</li>
-          <li>Guided Breathing & Pranayama Sessions</li>
-          <li>Live 1-on-1 Consultations</li>
-          <li>Weekly Meal Plans</li>
-        </ul>
-      </div>
-      <div>
-        <ul>
-          <li class="bold">Services</li>
-          <li>100+ Healing Recipes</li>
-          <li>Grocery Lists & Prep Guides</li>
-          <li>Symptom Tracking Dashboard</li>
-          <li>Monthly Progress Reports</li>
-          <li>Expert WhatsApp Support</li>
-        </ul>
-      </div>
-      <div>
-        <ul>
-          <li class="bold">Services</li>
-          <li>Live Yoga Classes</li>
-          <li>Condition Reversal Programs</li>
-          <li>Mindfulness & Lifestyle Coaching</li>
-          <li>Detox & Anti-inflammatory Plans</li>
-          <li>Community Access & Support Groups</li>
-        </ul>
-      </div>
-    </footer>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
@@ -619,6 +686,10 @@
           elem.innerHTML = "See More";
         }
       }
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
     </script>
   </body>
 </html>
